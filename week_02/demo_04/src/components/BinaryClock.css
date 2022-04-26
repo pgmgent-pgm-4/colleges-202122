@@ -1,0 +1,20 @@
+.binary-clock {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.led {
+    width: 20px;
+    height: 20px;
+
+    background-color: #282c34;
+    border-radius: 50%;
+    border: 1px solid #282c34;
+
+    text-indent: -999em;
+}
+
+.led--ison {
+    background-color: aqua;
+}

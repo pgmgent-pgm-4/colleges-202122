@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import logo from './logo.svg';
 import './App.css';
-import { TagCloud, DefaultMenu, UserMenu, ThemeToggle } from './components';
+import { TagCloud, DefaultMenu, UserMenu, ThemeToggle, BinaryClock } from './components';
 
 import { dataTags } from './data';
 
@@ -18,6 +18,7 @@ function App() {
 
   return (
     <div className={`app${isDarkmode === true ? ' app--isdarkmode': ''}`}>
+      <BinaryClock />
       <ThemeToggle onThemeChanged={handleThemeChange} isDarkmode={isDarkmode} />
       <ThemeToggle onThemeChanged={handleThemeChange} isDarkmode={isDarkmode} />
       <ThemeToggle onThemeChanged={handleThemeChange} isDarkmode={isDarkmode} />

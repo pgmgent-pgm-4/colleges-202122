@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import './App.css';
-import { Clock, ClockWithClass, ThemeMode } from './components';
+import { Clock, ClockPerformance, ClockWithClass, ThemeMode } from './components';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -9,6 +9,7 @@ const App = () => {
   return (
     <div className="App">
       <ThemeMode />
+      <ClockPerformance />
       <Clock utc={count} />
       <Clock utc={4} />
       <Clock utc={3} />

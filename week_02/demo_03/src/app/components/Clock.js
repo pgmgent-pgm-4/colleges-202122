@@ -7,7 +7,7 @@ const Clock = ({utc}) => {
         const timerId = setInterval(() => tick(), 5);
         return () => {
             clearInterval(timerId);
-        } 
+        }         
     }, [utc]);
 
     const tick = () => {

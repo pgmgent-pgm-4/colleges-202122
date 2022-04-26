@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 const ThemeMode = () => {
     const [isDarkMode, setIsDarkMode] = useState(true);
@@ -20,6 +20,11 @@ const ThemeMode = () => {
         console.log('Do some magic with link');
     };
 
+    const linkHandlerAsCallback = useCallback((ev) => {
+        ev.preventDefault();
+        console.log('Do some magic with link');
+    }, []);
+
     useEffect(() => {
         document.body.style.transform = `rotate(${degrees}deg)`;
     }, [degrees])
@@ -28,7 +33,7 @@ const ThemeMode = () => {
     return (
         <>
             <button onClick={(ev) => toggleTheme(ev)}>Toggle</button>
-            <a href="http://www.pgm.gent" title="A Link" onClick={(ev) => linkHandler(ev)}>Press Me</a>
+            <a href="http://www.pgm.gent" title="A Link" onClick={(ev) => linkHandlerAsCallback(ev)}>Press Me</a>
             <button onClick={(ev) => handleDegrees(ev)}>Degrees</button>
         </>
     );

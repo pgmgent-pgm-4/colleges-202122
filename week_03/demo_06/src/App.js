@@ -1,10 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import { Alert, AlertSuccess, Dialog, SplitPane } from './components';
+import { Alert, AlertSuccess, BeerRandom, Dialog, SplitPane } from './components';
+import { APP_NAME } from './data/constants';
+
+import portfolio from './data/portfolio.json';
+
+// https://random-data-api.com/api/beer/random_beer
 
 function App() {
   return (
     <div className="App">
+      <BeerRandom/>
+      <p>{APP_NAME}</p>
       <Alert title="Updated a post with is 12345" message="We like Bash love programming make cool stuff"/>
       <AlertSuccess title="Updated a post with is 12345" message="We like Bash love programming make cool stuff"/>
       <Dialog title="Updated a post with id 123453">

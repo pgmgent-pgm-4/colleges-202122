@@ -17,6 +17,7 @@ function App() {
       <Dimmer val={handleDimmerValue}/>
       <DimmedLamp lampColor={lampColor}/>
       <DimmedLamp lampColor={lampColor}/>
+      <Dimmer val={handleDimmerValue}/>
       <DimmedLamp lampColor={lampColor}/>
       <DimmedLamp lampColor={lampColor}/>
       <PostForm/>

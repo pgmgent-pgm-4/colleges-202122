@@ -1,4 +1,5 @@
 import Alert, { AlertDanger, AlertSuccess } from "./Alert";
+import GDMGhentCasesList from "./GDMGhentCasesList";
 import BeerRandom from "./BeerRandom";
 import Dialog from "./Dialog";
 import SplitPane from "./SplitPane";
@@ -9,5 +10,6 @@ export {
   AlertSuccess,
   BeerRandom,
   Dialog,
+  GDMGhentCasesList,
   SplitPane,
 }

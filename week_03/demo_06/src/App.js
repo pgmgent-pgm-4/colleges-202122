@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { Alert, AlertSuccess, BeerRandom, Dialog, SplitPane } from './components';
+import { Alert, AlertSuccess, BeerRandom, Dialog, GDMGhentCasesList, SplitPane } from './components';
 import { APP_NAME } from './data/constants';
 
 import portfolio from './data/portfolio.json';
@@ -10,6 +10,7 @@ import portfolio from './data/portfolio.json';
 function App() {
   return (
     <div className="App">
+      <GDMGhentCasesList />
       <BeerRandom/>
       <p>{APP_NAME}</p>
       <Alert title="Updated a post with is 12345" message="We like Bash love programming make cool stuff"/>

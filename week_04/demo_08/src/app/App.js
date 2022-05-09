@@ -1,21 +1,25 @@
 import { useState } from 'react';
-import './App.css';
+
+import { ThemeProvider, UserProvider } from './contexts';
+
+import Navigation from './components/Navigation';
 import StopWatch from './components/StopWatch';
 import ThemeButton from './components/ThemedButton';
 import ThemeToggle from './components/ThemeToggle';
 
+import './App.css';
+
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const handleThemeChange = (isDarkMode) => {
-    setIsDarkMode(isDarkMode);
-  }
-
   return (
     <div className="app">
       <StopWatch/>
-      <ThemeToggle isDarkMode={isDarkMode} onThemeChanged={handleThemeChange}/>
-      <ThemeButton isDarkMode={isDarkMode}/>
+      <ThemeProvider>
+        <UserProvider>
+          <Navigation/>
+          <ThemeToggle />
+          <ThemeButton />
+        </UserProvider>
+      </ThemeProvider>
     </div>
   );
 }

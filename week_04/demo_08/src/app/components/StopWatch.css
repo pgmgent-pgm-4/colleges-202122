@@ -1,0 +1,7 @@
+.stopwatch__interactive:focus {
+  background-color: #ff6600;
+}
+
+.stopwatch__interactive {
+  background-color: #00ff66;
+}

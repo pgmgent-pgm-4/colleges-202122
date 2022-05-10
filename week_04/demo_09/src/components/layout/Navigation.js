@@ -1,13 +1,34 @@
-import { Link } from "react-router-dom";
+import { NavLink as  RRNavLink} from "react-router-dom";
+
+import {Nav, NavLink, NavItem} from 'reactstrap';
 
 const Navigation = () => {
   return (
-    <nav className="main-navigation">
-      <Link to="/">Home</Link>
-      <Link to="posts">Posts</Link>
-      <Link to="about">About</Link>
-      <Link to="contact">Contact</Link>
-    </nav>
+    <Nav
+        className="me-auto"
+        navbar
+      >
+      <NavItem>
+        <NavLink tag={RRNavLink} to="/posts">
+          Posts
+        </NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink tag={RRNavLink} to="/about">
+          About
+        </NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink tag={RRNavLink} to="/contact">
+          Contact
+        </NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink tag={RRNavLink} to="/3d">
+          3D
+        </NavLink>
+      </NavItem>
+    </Nav>
   )
 };
 

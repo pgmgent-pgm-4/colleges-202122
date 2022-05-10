@@ -1,8 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
 
-import logo from './logo.svg';
-import './App.css';
-import { AboutPage, ContactPage, HomePage, PostDetailsPage, PostsPage } from "./pages";
+import './App.scss';
+import { AboutPage, ContactPage, HomePage, PostDetailsPage, PostsPage, ThreeDPage } from "./pages";
 import { BaseLayout, PostsLayout } from "./components/layout";
 
 function App() {
@@ -17,6 +16,7 @@ function App() {
           </Route>
           <Route path="about" element={<AboutPage />} />
           <Route path="contact" element={<ContactPage />} />
+          <Route path="3d" element={<ThreeDPage />} />
         </Route>
       </Routes>
     </div>

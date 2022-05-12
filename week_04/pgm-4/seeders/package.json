@@ -1,0 +1,27 @@
+{
+  "name": "seeders",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "seeder:users": "babel-node src/users.seeders.js --debug"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^6.3.1",
+    "awesome-graphql-client": "^0.12.1",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "jsdom": "^19.0.0",
+    "node-fetch": "^2.6.1",
+    "slate": "^0.58.3",
+    "slate-hyperscript": "^0.58.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/node": "^7.17.10",
+    "@babel/preset-env": "^7.17.10"
+  }
+}
